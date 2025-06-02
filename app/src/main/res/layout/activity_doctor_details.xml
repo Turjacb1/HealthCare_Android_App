@@ -41,33 +41,48 @@
     <!-- ListView for Doctor Details -->
     <ListView
         android:id="@+id/ListViewDD"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginHorizontal="16dp"
         android:divider="@android:color/white"
         android:dividerHeight="1dp"
-        app:layout_constraintTop_toBottomOf="@id/textViewDDTitle"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLTBack"
+        app:layout_constraintBottom_toTopOf="@id/buttonAddDoctor"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textViewDDTitle" />
+
+    <!-- Add Doctor Button -->
+    <Button
+        android:id="@+id/buttonAddDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/teal_200"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Add Doctor"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/buttonGoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Back Button -->
     <Button
-        android:id="@+id/buttonLTBack"
+        android:id="@+id/buttonGoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:textAllCaps="false"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/purple_200"
-        android:textColor="@android:color/white"
         android:paddingHorizontal="24dp"
         android:paddingVertical="8dp"
-        app:layout_constraintTop_toBottomOf="@id/ListViewDD"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

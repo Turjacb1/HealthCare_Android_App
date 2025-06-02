@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "247097924859",
+    "project_id": "healthcare-d52de",
+    "storage_bucket": "healthcare-d52de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247097924859:android:8482bcab89c86084b7245e",
+        "android_client_info": {
+          "package_name": "com.turja.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247097924859-dlhccctfkb0orvenbj8lsg4tf0jud808.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.turja.healthcare",
+            "certificate_hash": "546b90a5eb3ab3f382736f682bb0681638b0ecf9"
+          }
+        },
+        {
+          "client_id": "247097924859-1vt7e3h7at9acomis1e27ofsslub13k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ2webj0lcFiJ7evgnIANOGRRaUf6ffCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247097924859-1vt7e3h7at9acomis1e27ofsslub13k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

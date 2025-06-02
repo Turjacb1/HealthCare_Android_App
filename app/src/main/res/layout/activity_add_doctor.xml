@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="816dp"
+            android:layout_height="61dp"
+            android:hint="Doctor Name" />
+
+        <EditText
+            android:id="@+id/editTextHospital"
+            android:layout_width="953dp"
+            android:layout_height="55dp"
+            android:hint="Hospital Name" />
+
+        <EditText
+            android:id="@+id/editTextExp"
+            android:layout_width="946dp"
+            android:layout_height="wrap_content"
+            android:hint="Experience" />
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            android:layout_width="371dp"
+            android:layout_height="74dp"
+            android:hint="Mobile Number" />
+
+        <EditText
+            android:id="@+id/editTextFee"
+            android:layout_width="371dp"
+            android:layout_height="68dp"
+            android:hint="Consultation Fee" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/doctor_categories"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save Doctor" />
+    </LinearLayout>
+</ScrollView>

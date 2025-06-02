@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.turja.healthcare" />
+                  <option name="mobileSdkAppId" value="1:247097924859:android:8482bcab89c86084b7245e" />
+                  <option name="projectId" value="healthcare-d52de" />
+                  <option name="projectNumber" value="247097924859" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

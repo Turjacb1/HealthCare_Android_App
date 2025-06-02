@@ -4,43 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
-    tools:context=".LabTestActivity">
+    android:background="@drawable/back1"
+    tools:context=".BuyMedicineDetailsActivity">
 
     <Button
-        android:id="@+id/buttonAddToCart"
+        android:id="@+id/buttonBMDAddToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:paddingHorizontal="24dp"
         android:paddingVertical="8dp"
-        android:text="Go to Cart"
+        android:text="Add to Cart"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.026"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textViewLTTitle"
+        android:id="@+id/textViewBMDPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif"
-        android:text="Lab Test and Packages"
+        android:text="Buy Medicine and Packages"
         android:textColor="@color/yellowLight"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewDDName" />
+        app:layout_constraintTop_toBottomOf="@id/textViewBMDName" />
 
     <TextView
-        android:id="@+id/textViewDDName"
+        android:id="@+id/textViewBMDName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -55,7 +54,7 @@
 
     <!-- Section Title -->
     <TextView
-        android:id="@+id/textViewDDTitle"
+        android:id="@+id/textViewBMDTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -66,9 +65,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewDDName" />
+        app:layout_constraintTop_toBottomOf="@id/textViewBMDName" />
 
     <!-- ListView for Doctor Details -->
+
+    <!-- Back Button -->
     <ListView
         android:id="@+id/ListViewLabTest"
         android:layout_width="328dp"
@@ -78,17 +79,18 @@
         android:layout_marginBottom="16dp"
         android:divider="@android:color/white"
         android:dividerHeight="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonGoBack"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBMDGoBack"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewDDTitle" />
+        app:layout_constraintTop_toBottomOf="@id/textViewBMDTitle"
+        app:layout_constraintVertical_bias="0.273" />
 
-    <!-- Back Button -->
     <Button
-        android:id="@+id/buttonGoBack"
+        android:id="@+id/buttonBMDGoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:paddingHorizontal="24dp"
         android:paddingVertical="8dp"
@@ -97,8 +99,37 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextBMDDMultiLine"
+        android:layout_width="290dp"
+        android:layout_height="372dp"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textImeMultiLine"
+        android:text="hi \n hello"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDPackageName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

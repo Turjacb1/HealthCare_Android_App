@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">HealthCare</string>
+
+    <string-array name="doctor_categories">
+        <item>Family Physician</item>
+        <item>Dietician</item>
+        <item>Dentist</item>
+        <item>Surgeon</item>
+        <item>Cardiologists</item>
+    </string-array>
+
 </resources>
